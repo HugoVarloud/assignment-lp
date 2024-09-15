@@ -1,0 +1,24 @@
+{
+  "dataset": [
+    {
+      "name" :"Doliprane",
+      "expiresIn": 20, 
+      "benefit": 30
+    },
+    {
+      "name" :"Herbal Tea",
+      "expiresIn": 10,
+      "benefit":  5
+    },
+    {
+      "name" :"Fervex",
+      "expiresIn": 12,
+      "benefit": 35
+    },
+    {
+      "name" :"Magic Pill",
+      "expiresIn": 15,
+      "benefit": 40
+    }
+  ]
+}

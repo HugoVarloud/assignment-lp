@@ -11,7 +11,7 @@ export class Pharmacy {
     this.drugs = drugs;
   }
   updateBenefitValue() {
-    for (var i = 0; i < this.drugs.length; i++) {
+    for (let i = 0; i < this.drugs.length; i++) {
       if (
         this.drugs[i].name != "Herbal Tea" &&
         this.drugs[i].name != "Fervex"
