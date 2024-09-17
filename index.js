@@ -2,7 +2,6 @@ import { Drug, Pharmacy } from "./pharmacy";
 import fs from "fs";
 import path from "path";
 
-
 const importDrugsDataset = async () => {
   const drugs = [];
   const inputPath = process.argv[2];
