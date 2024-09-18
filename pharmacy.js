@@ -4,7 +4,12 @@ export class Drug {
     this.expiresIn = expiresIn;
     this.benefit = benefit;
   }
+
+  capBenefit() {
+    this.benefit = Math.min(this.benefit, 50);
+  }
 }
+
 
 class HerbalTeal extends Drug {
   update () {
@@ -13,6 +18,8 @@ class HerbalTeal extends Drug {
     if (this.expiresIn < 0) {
       this.benefit = Math.min(50, this.benefit + 1);
     }
+
+    this.capBenefit();
   }
 }
 
@@ -31,6 +38,8 @@ class Fervex extends Drug {
     if (this.expiresIn < 0) {
       this.benefit = 0;
     }
+
+    this.capBenefit();
   }
 }
 
@@ -49,6 +58,8 @@ class RegularDrug extends Drug {
     if (this.expiresIn < 0 && this.benefit > 0) {
       this.benefit -= 1;
     }
+
+    this.capBenefit();
   }
 }
 
