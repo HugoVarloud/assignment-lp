@@ -6,7 +6,7 @@ const importDrugsDataset = async () => {
   const drugs = [];
   const inputPath = process.argv[2];
   if (!inputPath) {
-    console.error('No path was found as argument', error);
+    console.error('No path was found as argument');
     process.exit(1);
   }
 
